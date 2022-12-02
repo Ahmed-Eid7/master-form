@@ -4,14 +4,65 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/animation.css" />
+    <link rel="stylesheet" href="css/form.css" />
     <title>CSS</title>
   </head>
   <body>
-    <main>
+    <!-- <main>
       <div class="square">🚀</div>
       <div class="square">🔥</div>
       <div class="square animate">🌮</div>
-    </main>
+    </main> -->
+    <!-- 
+    ###############################
+    Master Form
+    ###############################
+    -->
+    <!-- method=post data are not visible -->
+    <form action="https://example.com/animals" method="post">
+      <fieldset>
+        <legend>Master Form</legend>
+        <div>
+          <label class="block" for="animal"
+            >What is your favorite animal?</label
+          >
+          <input type="text" id="animal" name="animal" />
+        </div>
+        <div>
+          <label class="block" for="color">What is your favorite color?</label>
+          <input type="text" id="color" name="color" />
+        </div>
+        <div>
+          <label class="block" for="photo">Photo</label>
+          <input type="file" id="photo" name="photo" />
+        </div>
+        <div>
+          <div>
+            <input type="checkbox" name="os" id="windows" checked />
+            <label for="windows">Windows</label>
+          </div>
+          <div>
+            <input type="checkbox" name="os" id="mac" />
+            <label for="mac">Mac</label>
+          </div>
+          <div>
+            <input type="checkbox" name="os" id="linux" />
+            <label for="linux">Linux</label>
+          </div>
+        </div>
+        <div>
+          <label class="block" for="comment">Comment</label>
+          <textarea name="comment" id="comment"></textarea>
+        </div>
+        <div>
+          <label class="block" for="color">Color</label>
+          <select id="color" name="color">
+            <option value="orange">Orange</option>
+            <option value="pink" selected>Pink</option>
+          </select>
+        </div>
+      </fieldset>
+      <button>Save</button>
+    </form>
   </body>
 </html>
